@@ -27,10 +27,65 @@
                   </li>
                   <li class="nav-item">
                     <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search products..." aria-label="Search">
+                      <button class="btn btn-outline-success mr-sm-2" type="submit">Search</button>
                     </form>
                   </li>
+                  <!-- Add a product -->
+                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">
+                    Add a product
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Add a product</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                        <div class="form-floating mb-3 ">
+                          <input type="text" class="form-control" id="floatingInput" placeholder="productName">
+                          <label for="floatingInput">Product Name</label>
+                        </div>
+                        <div class="input-group ">
+                          <div class="input-group mb-3">
+                            <span class="input-group-text">Description</span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                          </div>
+                        </div>
+
+                        <div class="input-group mb-3 ">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                          </div>
+                          <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                          <div class="input-group-append">
+                            <span class="input-group-text">.00</span>
+                          </div>
+                        </div>
+                        
+                        <h6 class=" mb-2">Product Image</h6>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">Choose file</span>
+                          </div>
+                          <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupFile01">
+                            <label class="custom-file-label" for="inputGroupFile01">No file chosen</label>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-success">Add product</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <li class="nav-item dropdown" hidden>
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Settings
@@ -146,7 +201,7 @@
 </body>
 </html>
 
-    <!--div class="container mt-3" id="containerLogin">
+    <div class="container mt-3" id="containerLogin">
         <label><h3>Login</h3></label>
         <div class="form-floating mb-3">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -157,10 +212,10 @@
             <label for="floatingPassword">Password</label>
           </div>
           <button type="button" class="btn btn-outline-primary mt-1">Login</button>
-          <a type="button" class="btn btn-outline-success mt-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</a>
+          <a type="button" class="btn btn-outline-success mt-1" data-bs-toggle="modal" data-bs-target="#Register">Register</a>
           <a href="#" class="text-decoration-underline">Forgot password?</a>
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal fade" id="Register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
             <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
