@@ -23,6 +23,9 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
+                    <a id="btnLogout" class="nav-link active" aria-current="page" href="#">Logout</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Products</a>
                   </li>
                   <li class="nav-item">
@@ -123,7 +126,7 @@
 <body>
   <!--Products-->
     <br>
-<div class="container">
+<div class="container" id="containerProducts">
   <div class="row">
     <div class="col-md-4">
       <div class="card">
@@ -204,14 +207,14 @@
     <div class="container mt-3" id="containerLogin">
         <label><h3>Login</h3></label>
         <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
+            <input type="email" class="form-control" id="txtLoginEmail" placeholder="name@example.com">
+            <label for="txtLoginEmail">Email address</label>
           </div>
           <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
+            <input type="password" class="form-control" id="txtLoginPassword" placeholder="Password">
+            <label for="txtLoginPassword">Password</label>
           </div>
-          <button type="button" class="btn btn-outline-primary mt-1">Login</button>
+          <button type="button" id="btnLogin" class="btn btn-outline-primary mt-1">Login</button>
           <a type="button" class="btn btn-outline-success mt-1" data-bs-toggle="modal" data-bs-target="#Register">Register</a>
           <a href="#" class="text-decoration-underline">Forgot password?</a>
 
@@ -288,7 +291,7 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" id="btnModalRegisterClose" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                 <button type="button" id="btnRegister" class="btn btn-success">Register</button>
                 </div>
             </div>
